@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question1"
+        android:text="Quel est votre sexe ?"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question1"
+        android:choiceMode="singleChoice"
+        android:id="@+id/ListView1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quel(s) langage(s) maitrisez vous :"
+        android:layout_below="@+id/ListView1"
+        android:id="@+id/question2"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question2"
+        android:choiceMode="multipleChoice"
+        android:id="@+id/ListView2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ListView2"
+        android:text="@string/send"
+        android:id="@+id/button"
+        />
+
+
+</RelativeLayout>

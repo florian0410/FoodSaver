@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OpenClassroom_tuto</string>
+    <string name="histoire">Vous connaissez l\'histoire de <b><u>\"Tom Sawyer\"</u></b> ?</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello">Bonjour %1$s, vous avez %2$d </string>
+    <string name="send">Envoyer</string>
+    <string name="action_settings">Settings</string>
+    <string name="description_appli">Donne accès à internet à l\'application</string>
+    <string name="info_age" /> La donnée reçue de la précédente activité est %1d an <string/>
+    </resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="esiee.foodsaver">
+
+    <uses-sdk android:minSdkVersion="16" /> <!-- Version Jelly bean au minimum -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Demander permission internet -->
+
+    <permission android:name="android.permission.INTERNET"
+        android:label="Autorisation accès Internet"
+        android:description="@string/description_appli"
+        android:protectionLevel="normal" />
+
+    <!-- Gestion des supports taille écran -->
+    <supports-screens android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="esiee.OpenClassroom_Tuto.Test"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="esiee.OpenClassroom_Tuto.TestButton"
+            android:label="@string/app_name" />
+
+        <activity
+        android:name="esiee.OpenClassroom_Tuto.testStrings"
+        android:label="@string/app_name" />
+
+        <activity
+            android:name="esiee.OpenClassroom_Tuto.TestAdvancedWidget"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="esiee.OpenClassroom_Tuto.TestAdvancedWidget2"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="esiee.OpenClassroom_Tuto.DialogueBox"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="esiee.OpenClassroom_Tuto.WidgetTest"
+            android:label="@string/app_name" />
+
+        <!-- Activité bloquée en portrait -->
+        <activity
+            android:name="esiee.OpenClassroom_Tuto.MenuTest"
+            android:label="@string/app_name"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="esiee.OpenClassroom_Tuto.OrientationTest"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="esiee.OpenClassroom_Tuto.NextPageTest"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="esiee.OpenClassroom_Tuto.PreferenceTest"
+            android:label="@string/app_name">
+        </activity>
+
+    </application>
+
+</manifest>

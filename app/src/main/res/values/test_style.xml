@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="style1">
+        <item name="android:textColor">#00FFFF</item>
+    </style>
+    <!-- On récupère la couleur du texte définie par le parent -->
+    <style name="style2" parent="style1">
+        <item name="android:textSize" parent="style1">20sp</item>
+    </style>
+    <!-- On écrase la couleur du texte définie par le parent, mais on garde la taille -->
+    <style name="style3" parent="style2">
+        <item name="android:textColor">#05FFFF</item>
+    </style>
+</resources>
